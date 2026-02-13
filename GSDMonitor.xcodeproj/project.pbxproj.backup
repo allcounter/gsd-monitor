@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C4F324DA1FD8F9AD29D4956 /* PlanParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6DD39EA418E1D909E8700A /* PlanParserTests.swift */; };
+		4EFC71C114F95CD1C956CFAC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F51625D8D9E2B62661CBC3 /* Cocoa.framework */; };
+		AA0000010000000000000001 /* GSDMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000001 /* GSDMonitorApp.swift */; };
+		AA0000030000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000040000000000000001 /* ContentView.swift */; };
+		AA0000050000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0000060000000000000001 /* Assets.xcassets */; };
+		AA0000260000000000000001 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000270000000000000001 /* Project.swift */; };
+		AA0000280000000000000001 /* Roadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000290000000000000001 /* Roadmap.swift */; };
+		AA0000300000000000000001 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000310000000000000001 /* Phase.swift */; };
+		AA0000320000000000000001 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000330000000000000001 /* State.swift */; };
+		AA0000340000000000000001 /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000350000000000000001 /* Requirement.swift */; };
+		AA0000360000000000000001 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000370000000000000001 /* Plan.swift */; };
+		AA0000380000000000000001 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000390000000000000001 /* SidebarView.swift */; };
+		AA0000400000000000000001 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000410000000000000001 /* DetailView.swift */; };
+		AA0000420000000000000001 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000430000000000000001 /* PreviewData.swift */; };
+		AA0000470000000000000001 /* BookmarkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000480000000000000001 /* BookmarkService.swift */; };
+		AA0000490000000000000001 /* ProjectDiscoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000500000000000000001 /* ProjectDiscoveryService.swift */; };
+		B5AE9E04661370D1FC09A20F /* RequirementsParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC3CF3CC9C83DF56891E4C /* RequirementsParserTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		959C58C72906A56AE8DF2485 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0000200000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0000160000000000000001;
+			remoteInfo = GSDMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65AC3CF3CC9C83DF56891E4C /* RequirementsParserTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GSDMonitorTests/RequirementsParserTests.swift; sourceTree = SOURCE_ROOT; };
+		68F51625D8D9E2B62661CBC3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		AA0000000000000000000001 /* GSDMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSDMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000020000000000000001 /* GSDMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSDMonitorApp.swift; sourceTree = "<group>"; };
+		AA0000040000000000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA0000060000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA0000070000000000000001 /* GSDMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GSDMonitor.entitlements; sourceTree = "<group>"; };
+		AA0000270000000000000001 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		AA0000290000000000000001 /* Roadmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roadmap.swift; sourceTree = "<group>"; };
+		AA0000310000000000000001 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
+		AA0000330000000000000001 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		AA0000350000000000000001 /* Requirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requirement.swift; sourceTree = "<group>"; };
+		AA0000370000000000000001 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		AA0000390000000000000001 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		AA0000410000000000000001 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		AA0000430000000000000001 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		AA0000480000000000000001 /* BookmarkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkService.swift; sourceTree = "<group>"; };
+		AA0000500000000000000001 /* ProjectDiscoveryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDiscoveryService.swift; sourceTree = "<group>"; };
+		CA6DD39EA418E1D909E8700A /* PlanParserTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GSDMonitorTests/PlanParserTests.swift; sourceTree = SOURCE_ROOT; };
+		F3699BBFC5C9E623FEDD8A75 /* GSDMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSDMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6583F2E9E6AB9106E840894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFC71C114F95CD1C956CFAC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000080000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4938485ACD569EBFCBCE5FA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B7C612F4627AD3C08B272E3 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B7C612F4627AD3C08B272E3 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				68F51625D8D9E2B62661CBC3 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		AA0000090000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				AA0000100000000000000001 /* GSDMonitor */,
+				AA0000110000000000000001 /* Products */,
+				4938485ACD569EBFCBCE5FA2 /* Frameworks */,
+				C03A02E35F4824F9325B21BB /* GSDMonitorTests */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0000100000000000000001 /* GSDMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000120000000000000001 /* App */,
+				AA0000130000000000000001 /* Models */,
+				AA0000140000000000000001 /* Views */,
+				AA0000150000000000000001 /* Services */,
+				AA0000440000000000000001 /* Utilities */,
+				AA0000070000000000000001 /* GSDMonitor.entitlements */,
+			);
+			path = GSDMonitor;
+			sourceTree = "<group>";
+		};
+		AA0000110000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000001 /* GSDMonitor.app */,
+				F3699BBFC5C9E623FEDD8A75 /* GSDMonitorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0000120000000000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000020000000000000001 /* GSDMonitorApp.swift */,
+				AA0000060000000000000001 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA0000130000000000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000270000000000000001 /* Project.swift */,
+				AA0000290000000000000001 /* Roadmap.swift */,
+				AA0000310000000000000001 /* Phase.swift */,
+				AA0000330000000000000001 /* State.swift */,
+				AA0000350000000000000001 /* Requirement.swift */,
+				AA0000370000000000000001 /* Plan.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA0000140000000000000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000040000000000000001 /* ContentView.swift */,
+				AA0000390000000000000001 /* SidebarView.swift */,
+				AA0000410000000000000001 /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA0000150000000000000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000480000000000000001 /* BookmarkService.swift */,
+				AA0000500000000000000001 /* ProjectDiscoveryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA0000440000000000000001 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000430000000000000001 /* PreviewData.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C03A02E35F4824F9325B21BB /* GSDMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				65AC3CF3CC9C83DF56891E4C /* RequirementsParserTests.swift */,
+				CA6DD39EA418E1D909E8700A /* PlanParserTests.swift */,
+			);
+			name = GSDMonitorTests;
+			path = GSDMonitorTests;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90FC5C12263EF0F15ACBE533 /* GSDMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D0810F4538FBBD4DBEE20E /* Build configuration list for PBXNativeTarget "GSDMonitorTests" */;
+			buildPhases = (
+				286C16415C2B616564D038CA /* Sources */,
+				A6583F2E9E6AB9106E840894 /* Frameworks */,
+				1DC843E896870F970AABEEA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FD4367EA3B1F6477967DB2C /* PBXTargetDependency */,
+			);
+			name = GSDMonitorTests;
+			productName = GSDMonitorTests;
+			productReference = F3699BBFC5C9E623FEDD8A75 /* GSDMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA0000160000000000000001 /* GSDMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000170000000000000001 /* Build configuration list for PBXNativeTarget "GSDMonitor" */;
+			buildPhases = (
+				AA0000180000000000000001 /* Sources */,
+				AA0000080000000000000001 /* Frameworks */,
+				AA0000190000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSDMonitor;
+			packageProductDependencies = (
+				AA0000450000000000000001 /* Markdown */,
+			);
+			productName = GSDMonitor;
+			productReference = AA0000000000000000000001 /* GSDMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000200000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA0000160000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA0000210000000000000001 /* Build configuration list for PBXProject "GSDMonitor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0000090000000000000001;
+			packageReferences = (
+				AA0000460000000000000001 /* XCRemoteSwiftPackageReference "swift-markdown" */,
+			);
+			productRefGroup = AA0000110000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0000160000000000000001 /* GSDMonitor */,
+				90FC5C12263EF0F15ACBE533 /* GSDMonitorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DC843E896870F970AABEEA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000190000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000050000000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		286C16415C2B616564D038CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AE9E04661370D1FC09A20F /* RequirementsParserTests.swift in Sources */,
+				1C4F324DA1FD8F9AD29D4956 /* PlanParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000180000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000030000000000000001 /* ContentView.swift in Sources */,
+				AA0000010000000000000001 /* GSDMonitorApp.swift in Sources */,
+				AA0000260000000000000001 /* Project.swift in Sources */,
+				AA0000280000000000000001 /* Roadmap.swift in Sources */,
+				AA0000300000000000000001 /* Phase.swift in Sources */,
+				AA0000320000000000000001 /* State.swift in Sources */,
+				AA0000340000000000000001 /* Requirement.swift in Sources */,
+				AA0000360000000000000001 /* Plan.swift in Sources */,
+				AA0000380000000000000001 /* SidebarView.swift in Sources */,
+				AA0000400000000000000001 /* DetailView.swift in Sources */,
+				AA0000420000000000000001 /* PreviewData.swift in Sources */,
+				AA0000470000000000000001 /* BookmarkService.swift in Sources */,
+				AA0000490000000000000001 /* ProjectDiscoveryService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FD4367EA3B1F6477967DB2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GSDMonitor;
+			target = AA0000160000000000000001 /* GSDMonitor */;
+			targetProxy = 959C58C72906A56AE8DF2485 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		200EF955E2178A1733CF6683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gsd.monitor.GSDMonitorTests;
+				PRODUCT_MODULE_NAME = GSDMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSDMonitor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GSDMonitor";
+			};
+			name = Release;
+		};
+		AA0000220000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		AA0000230000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		AA0000240000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GSDMonitor/GSDMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gsd.monitor.GSDMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		AA0000250000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GSDMonitor/GSDMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gsd.monitor.GSDMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		DEDDA48E8B22AADC1082DDA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gsd.monitor.GSDMonitorTests;
+				PRODUCT_MODULE_NAME = GSDMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSDMonitor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GSDMonitor";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68D0810F4538FBBD4DBEE20E /* Build configuration list for PBXNativeTarget "GSDMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200EF955E2178A1733CF6683 /* Release */,
+				DEDDA48E8B22AADC1082DDA8 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000170000000000000001 /* Build configuration list for PBXNativeTarget "GSDMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000240000000000000001 /* Debug */,
+				AA0000250000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000210000000000000001 /* Build configuration list for PBXProject "GSDMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000220000000000000001 /* Debug */,
+				AA0000230000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA0000460000000000000001 /* XCRemoteSwiftPackageReference "swift-markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftlang/swift-markdown.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA0000450000000000000001 /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000460000000000000001 /* XCRemoteSwiftPackageReference "swift-markdown" */;
+			productName = Markdown;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AA0000200000000000000001 /* Project object */;
+}

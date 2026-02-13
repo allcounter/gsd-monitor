@@ -1,0 +1,9 @@
+.DS_Store
+DerivedData/
+DerivedDataSandbox/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.profraw
+build/
+.build/
+.continue-here.md
