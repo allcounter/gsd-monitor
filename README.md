@@ -1,6 +1,6 @@
 # GSD Monitor
 
-A native macOS dashboard for visualizing your [GSD](https://github.com/glittercowboy/get-shit-done) projects. See roadmaps, phases, tasks, and progress across all your projects — updated live as you work.
+A native macOS dashboard for visualizing your [GSD](https://github.com/gsd-build/get-shit-done) projects. See roadmaps, phases, tasks, and progress across all your projects — updated live as you work.
 
 ![GSD Monitor — Overview](screenshots/overview.png)
 
