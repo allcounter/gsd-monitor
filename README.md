@@ -1,5 +1,7 @@
 # GSD Monitor
 
+[![Built for GSD](https://img.shields.io/badge/Built%20for-GSD-orange?style=flat-square&logo=github)](https://github.com/gsd-build/get-shit-done)
+
 A native macOS dashboard for visualizing your [GSD](https://github.com/gsd-build/get-shit-done) projects. See roadmaps, phases, tasks, and progress across all your projects — updated live as you work.
 
 ![GSD Monitor — Overview](screenshots/overview.png)
